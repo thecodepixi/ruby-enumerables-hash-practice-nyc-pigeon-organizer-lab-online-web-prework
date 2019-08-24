@@ -18,6 +18,9 @@ def nyc_pigeon_organizer(data)
   end
   
   organized_pigeons.each do |pigeon| 
-    
+    data.each do |attribute|
+      binding.pry 
+    end
+  end
     
 end 
