@@ -20,7 +20,7 @@ def nyc_pigeon_organizer(data)
   organized_pigeons.each do |pigeon| 
     data.each do |attribute, values|
       if values.has_value?(pigeon) 
-        
+        binding.pry 
       end
     end
   end
