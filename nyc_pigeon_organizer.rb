@@ -19,7 +19,9 @@ def nyc_pigeon_organizer(data)
   
   organized_pigeons.each do |pigeon| 
     data.each do |attribute, values|
-      binding.pry 
+      if values.has_value?(pigeon) 
+        
+      end
     end
   end
     
