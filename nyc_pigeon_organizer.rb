@@ -2,15 +2,22 @@ require "pry"
 
 def nyc_pigeon_organizer(data)
   # write your code here!
-  
-  organized_pigeons = {}
-  
-  data.each do |attribute, values|
-    values.each do |key, pigeons|
-      pigeons.each do |pigeon|
-        organized_pigeons[pigeon] = {color: [], gender: [], lives: []}
-        organized_pigeons[pigeon][attribute].push(key)
+ # look inside the data and create a hash of all pigeons inside. 
+ # look through data again and see if each pigeon is associated with a particular attribute
+ # if they are, add that attribute to their nested hash description
+ # if not, move to the next attribute 
+ 
+ organized_pigeons = {}
+ 
+ data.each do |attribute, values|
+   values.each do |key, pigeons|
+     pigeons.each do |pigeon|
+       organized_pigeons[pigeon] = {color: [], gender: [], lives: []}
       end
     end
   end
+  
+  organized_pigeons.each do |pigeon| 
+    
+    
 end 
