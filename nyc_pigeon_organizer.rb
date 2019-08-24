@@ -20,7 +20,8 @@ def nyc_pigeon_organizer(data)
   organized_pigeons.each do |pigeon| 
     data.each do |attribute, values|
       values.each do |pair|
-        if 
+        if pair[1].include?(pigeon[0])
+          
       end
     end
   end
