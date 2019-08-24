@@ -22,6 +22,7 @@ def nyc_pigeon_organizer(data)
       values.each do |pair|
         if pair[1].include?(pigeon[0])
           organized_pigeons[pigeon[0]][attribute] = "#{pair[0]}"
+        end 
       end
     end
   end
