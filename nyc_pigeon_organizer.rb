@@ -22,7 +22,8 @@ def nyc_pigeon_organizer(data)
       values.each do |key, pigeons|
         if key.has_value?(pigeon)
           binding.pry 
-        end
+        end 
+      end
     end
   end
     
