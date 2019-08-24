@@ -9,6 +9,7 @@ def nyc_pigeon_organizer(data)
     values.each do |key, pigeons|
       pigeons.each do |pigeon|
         organized_pigeons[pigeon] = {color: [], gender: [], lives: []}
+        binding.pry 
         organized_pigeons[pigeon][:color] = values[key]
       end
     end
